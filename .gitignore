@@ -1,0 +1,85 @@
+# ==============================
+# OS / IDE
+# ==============================
+
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# Angular / Node
+# ==============================
+
+node_modules/
+dist/
+.angular/
+.cache/
+.nx/
+coverage/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# ==============================
+# .NET
+# ==============================
+
+bin/
+obj/
+out/
+
+# Visual Studio
+.vs/
+
+# Test results
+TestResults/
+
+# User-specific files
+*.user
+*.rsuser
+
+# ==============================
+# Entity Framework
+# ==============================
+
+# Local database files
+*.mdf
+*.ldf
+*.ndf
+
+# ==============================
+# Docker
+# ==============================
+
+docker-compose.override.yml
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
+logs/
+
+# ==============================
+# Secrets / Credentials
+# ==============================
+
+*.pfx
+*.key
+*.pem
+
+secrets/
