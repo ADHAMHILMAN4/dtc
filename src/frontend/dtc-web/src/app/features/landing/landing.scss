@@ -1,0 +1,313 @@
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.landing-hero {
+    padding-top: calc(var(--dtc-header-height) + var(--dtc-spacing-xl));
+    padding-bottom: var(--dtc-space-12);
+
+    text-align: center;
+}
+
+.landing-hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--dtc-spacing-xs);
+
+    margin-bottom: var(--dtc-spacing-lg);
+    padding: 4px 12px;
+
+    border-radius: var(--dtc-radius-full);
+
+    background: var(--dtc-accent-soft);
+    color: var(--dtc-accent);
+
+    font-family: var(--dtc-font-mono);
+    font-size: var(--dtc-text-label-sm-size);
+    font-weight: 500;
+    letter-spacing: var(--dtc-text-label-sm-spacing);
+}
+
+.landing-hero__badge mat-icon {
+    width: 16px;
+    height: 16px;
+
+    font-size: 16px;
+}
+
+.landing-hero__title {
+    max-width: 760px;
+    margin-bottom: var(--dtc-spacing-lg);
+}
+
+.landing-hero__description {
+    max-width: 680px;
+    margin-bottom: var(--dtc-spacing-xl);
+
+    color: var(--dtc-text-secondary);
+
+    font-size: var(--dtc-text-body-lg-size);
+    line-height: var(--dtc-text-body-lg-line);
+}
+
+.landing-hero__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--dtc-spacing-md);
+}
+
+.landing-hero__actions a {
+    min-height: 48px;
+}
+
+.landing-hero__preview {
+    width: 100%;
+    max-width: 1024px;
+
+    margin-top: var(--dtc-space-12);
+    padding: 8px;
+
+    background: var(--dtc-surface);
+
+    border: 1px solid var(--dtc-border);
+    border-radius: var(--dtc-radius-xl);
+
+    box-shadow: var(--dtc-shadow-md);
+}
+
+.landing-hero__preview-frame {
+    aspect-ratio: 16 / 9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--dtc-surface-muted);
+
+    border: 1px solid var(--dtc-border);
+    border-radius: var(--dtc-radius-lg);
+}
+
+.landing-dashboard-placeholder {
+    color: var(--dtc-text-muted);
+}
+
+/* =========================================================
+   CAPABILITIES
+   ========================================================= */
+
+.landing-capabilities {
+    padding: var(--dtc-space-12) 0;
+}
+
+.landing-section-heading {
+    margin-bottom: var(--dtc-space-10);
+
+    text-align: center;
+}
+
+.landing-section-heading h2 {
+    margin-bottom: var(--dtc-spacing-sm);
+}
+
+.landing-section-heading p {
+    max-width: 640px;
+    margin: 0 auto;
+
+    color: var(--dtc-text-secondary);
+}
+
+/* =========================================================
+   BENTO GRID
+   ========================================================= */
+
+.landing-bento {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--dtc-spacing-lg);
+}
+
+.landing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 360px;
+
+    padding: var(--dtc-spacing-lg);
+
+    background: var(--dtc-surface);
+
+    border: 1px solid var(--dtc-border);
+    border-radius: var(--dtc-radius-lg);
+
+    transition: box-shadow var(--dtc-transition-normal);
+}
+
+.landing-card:hover {
+    box-shadow: var(--dtc-shadow-sm);
+}
+
+.landing-card--job {
+    grid-column: span 2;
+}
+
+.landing-card__icon {
+    width: 32px;
+    height: 32px;
+
+    margin-bottom: var(--dtc-spacing-md);
+
+    color: var(--dtc-primary);
+
+    font-size: 32px;
+}
+
+.landing-card h3 {
+    margin-bottom: var(--dtc-spacing-sm);
+}
+
+.landing-card p {
+    max-width: 520px;
+
+    color: var(--dtc-text-secondary);
+
+    line-height: var(--dtc-text-body-md-line);
+}
+
+.landing-card__visual {
+    height: 192px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: var(--dtc-spacing-lg);
+
+    background: var(--dtc-surface-muted);
+
+    border: 1px solid var(--dtc-border);
+    border-radius: var(--dtc-radius-md);
+
+    color: var(--dtc-text-secondary);
+}
+
+.landing-card__visual--small {
+    height: 128px;
+}
+
+/* =========================================================
+   APPLICATION PIPELINE
+   ========================================================= */
+
+.landing-pipeline {
+    grid-column: span 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--dtc-spacing-xl);
+
+    padding: var(--dtc-spacing-lg);
+
+    background: var(--dtc-primary);
+    color: var(--dtc-text-inverse);
+
+    border-radius: var(--dtc-radius-lg);
+}
+
+.landing-pipeline__content {
+    max-width: 640px;
+}
+
+.landing-pipeline mat-icon {
+    margin-bottom: var(--dtc-spacing-md);
+}
+
+.landing-pipeline h3 {
+    margin-bottom: var(--dtc-spacing-sm);
+    color: var(--dtc-text-inverse);
+}
+
+.landing-pipeline p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.landing-pipeline a {
+    flex-shrink: 0;
+
+    background: var(--dtc-surface);
+    color: var(--dtc-text-primary);
+}
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.landing-cta {
+    padding: var(--dtc-space-12) 0;
+
+    background: var(--dtc-surface);
+
+    border-top: 1px solid var(--dtc-border);
+}
+
+.landing-cta__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.landing-cta h2 {
+    margin-bottom: var(--dtc-spacing-md);
+}
+
+.landing-cta p {
+    max-width: 680px;
+    margin-bottom: var(--dtc-spacing-xl);
+
+    color: var(--dtc-text-secondary);
+
+    font-size: var(--dtc-text-body-lg-size);
+    line-height: var(--dtc-text-body-lg-line);
+}
+
+.landing-cta a {
+    min-height: 48px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+    .landing-hero {
+        padding-top: calc(var(--dtc-header-height) + var(--dtc-spacing-lg));
+    }
+
+    .landing-hero__title {
+        max-width: 100%;
+    }
+
+    .landing-bento {
+        grid-template-columns: 1fr;
+    }
+
+    .landing-card--job,
+    .landing-pipeline {
+        grid-column: span 1;
+    }
+
+    .landing-pipeline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
