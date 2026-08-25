@@ -1,0 +1,242 @@
+.login-page {
+    min-height: calc(100vh - var(--dtc-header-height));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--dtc-space-4);
+
+    background: var(--dtc-background);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.login-background-decoration {
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+    overflow: hidden;
+
+    opacity: 0.05;
+}
+
+.decoration {
+    position: absolute;
+
+    width: 384px;
+    height: 384px;
+
+    border-radius: var(--dtc-radius-full);
+
+    filter: blur(80px);
+}
+
+.decoration-one {
+    top: 25%;
+    left: 25%;
+
+    background: var(--dtc-primary);
+}
+
+.decoration-two {
+    top: 33%;
+    right: 25%;
+
+    background: var(--dtc-secondary);
+}
+
+.login-content {
+    width: 100%;
+    max-width: 440px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.login-card {
+    padding: var(--dtc-space-10);
+
+    background: var(--dtc-surface);
+
+    border: 1px solid var(--dtc-border);
+
+    border-radius: var(--dtc-radius-xl);
+
+    box-shadow: var(--dtc-shadow-md);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: var(--dtc-space-10);
+}
+
+.login-logo {
+    width: 48px;
+    height: 48px;
+
+    margin: 0 auto var(--dtc-space-4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--dtc-primary);
+
+    border-radius: var(--dtc-radius-lg);
+
+    color: var(--dtc-text-inverse);
+
+    mat-icon {
+        width: 24px;
+        height: 24px;
+
+        font-size: 24px;
+    }
+}
+
+.login-header h1 {
+    margin-bottom: var(--dtc-space-2);
+
+    font-family: var(--dtc-font-heading);
+    font-size: var(--dtc-text-headline-md-size);
+    font-weight: var(--dtc-text-headline-md-weight);
+    line-height: var(--dtc-text-headline-md-line);
+
+    color: var(--dtc-primary);
+}
+
+.login-header p {
+    color: var(--dtc-text-secondary);
+
+    font-size: var(--dtc-text-body-sm-size);
+    line-height: var(--dtc-text-body-sm-line);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dtc-space-6);
+}
+
+.login-form mat-form-field {
+    width: 100%;
+}
+
+.login-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: calc(var(--dtc-space-2) * -1);
+}
+
+.login-options a {
+    font-family: var(--dtc-font-mono);
+    font-size: var(--dtc-text-label-sm-size);
+    font-weight: var(--dtc-text-label-sm-weight);
+    line-height: var(--dtc-text-label-sm-line);
+
+    color: var(--dtc-primary);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.login-submit {
+    width: 100%;
+    min-height: 48px;
+
+    font-family: var(--dtc-font-mono);
+}
+
+.login-divider {
+    position: relative;
+
+    margin: var(--dtc-space-6) 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid var(--dtc-border);
+}
+
+.login-divider span {
+    position: absolute;
+
+    padding: 0 var(--dtc-space-4);
+
+    background: var(--dtc-surface);
+
+    font-family: var(--dtc-font-mono);
+    font-size: var(--dtc-text-label-sm-size);
+    font-weight: var(--dtc-text-label-sm-weight);
+    letter-spacing: var(--dtc-text-label-sm-spacing);
+    text-transform: uppercase;
+
+    color: var(--dtc-text-secondary);
+}
+
+.google-button {
+    width: 100%;
+    min-height: 48px;
+
+    font-family: var(--dtc-font-mono);
+}
+
+.google-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+
+    margin-right: var(--dtc-space-2);
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.registration-text {
+    margin-top: var(--dtc-space-10);
+
+    text-align: center;
+
+    font-size: var(--dtc-text-body-sm-size);
+    line-height: var(--dtc-text-body-sm-line);
+
+    color: var(--dtc-text-secondary);
+}
+
+.registration-text a {
+    font-family: var(--dtc-font-mono);
+    font-size: var(--dtc-text-label-md-size);
+    font-weight: var(--dtc-text-label-md-weight);
+
+    color: var(--dtc-primary);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-page {
+        padding: var(--dtc-space-4);
+    }
+
+    .login-card {
+        padding: var(--dtc-space-6);
+    }
+
+    .login-options {
+        align-items: flex-start;
+        gap: var(--dtc-space-2);
+    }
+}
