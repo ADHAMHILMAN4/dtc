@@ -1,0 +1,130 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--dtc-header-height);
+
+    z-index: 50;
+
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid var(--dtc-border);
+
+    font-family: var(--dtc-font-mono);
+}
+
+.navbar__container {
+    width: 100%;
+    max-width: var(--dtc-container-max);
+
+    height: 100%;
+
+    margin: 0 auto;
+    padding: 0 var(--dtc-container-gutter);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__brand {
+    font-family: var(--dtc-font-heading);
+    font-size: var(--dtc-text-headline-sm-size);
+    font-weight: 700;
+
+    color: var(--dtc-primary);
+
+    transition: color var(--dtc-transition-fast);
+}
+
+.navbar__brand:hover {
+    color: var(--dtc-accent);
+}
+
+.navbar__links {
+    display: flex;
+    align-items: center;
+    gap: var(--dtc-spacing-lg);
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.navbar__links a {
+    position: relative;
+
+    color: var(--dtc-text-secondary);
+
+    font-size: var(--dtc-text-label-md-size);
+    font-weight: var(--dtc-text-label-md-weight);
+
+    transition: color var(--dtc-transition-fast);
+}
+
+.navbar__links a:hover,
+.navbar__links a.navbar__link--active {
+    color: var(--dtc-primary);
+}
+
+.navbar__links a.navbar__link--active::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+
+    height: 2px;
+
+    background: var(--dtc-primary);
+}
+
+.navbar__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--dtc-spacing-md);
+}
+
+.navbar__sign-in {
+    font-size: var(--dtc-text-label-md-size);
+    font-weight: 500;
+
+    color: var(--dtc-primary);
+
+    transition: color var(--dtc-transition-fast);
+}
+
+.navbar__sign-in:hover {
+    color: var(--dtc-accent);
+}
+
+.navbar__join {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 40px;
+
+    padding: 8px 16px;
+
+    border-radius: var(--dtc-radius-sm);
+
+    background: var(--dtc-accent);
+    color: var(--dtc-text-inverse);
+
+    font-family: var(--dtc-font-mono);
+    font-size: var(--dtc-text-label-md-size);
+    font-weight: 500;
+
+    transition:
+        background var(--dtc-transition-fast),
+        transform var(--dtc-transition-fast);
+}
+
+.navbar__join:hover {
+    background: var(--dtc-accent-hover);
+}

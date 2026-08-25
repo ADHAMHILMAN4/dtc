@@ -1,0 +1,38 @@
+<nav class="navbar">
+    <div class="navbar__container">
+        <!-- Brand -->
+        <a class="navbar__brand" routerLink="/"> DreamTechCareer </a>
+
+        <!-- Navigation -->
+        <ul class="navbar__links">
+            <li>
+                <a
+                    routerLink="/"
+                    routerLinkActive="navbar__link--active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                >
+                    Platform
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/process"> Process </a>
+            </li>
+
+            <li>
+                <a routerLink="/pricing"> Pricing </a>
+            </li>
+
+            <li>
+                <a routerLink="/about"> About </a>
+            </li>
+        </ul>
+
+        <!-- Actions -->
+        <div class="navbar__actions">
+            <a class="navbar__sign-in" routerLink="/login"> Sign In </a>
+
+            <a class="navbar__join" routerLink="/register"> Join Now </a>
+        </div>
+    </div>
+</nav>
