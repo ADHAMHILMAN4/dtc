@@ -1,0 +1,94 @@
+<div class="login-page">
+    <!-- Subtle background decoration -->
+    <div class="login-background-decoration" aria-hidden="true">
+        <div class="decoration decoration-one"></div>
+        <div class="decoration decoration-two"></div>
+    </div>
+
+    <main class="login-content">
+        <section class="login-card">
+            <!-- Header -->
+            <header class="login-header">
+                <div class="login-logo">
+                    <mat-icon>terminal</mat-icon>
+                </div>
+
+                <h1>DreamTechCareer</h1>
+
+                <p>Sign in to your professional suite</p>
+            </header>
+
+            <!-- Login Form -->
+            <form class="login-form" (ngSubmit)="onSubmit()">
+                <!-- Email -->
+                <mat-form-field appearance="outline">
+                    <mat-label>Email or Username</mat-label>
+
+                    <mat-icon matPrefix>person</mat-icon>
+
+                    <input
+                        matInput
+                        type="email"
+                        name="email"
+                        placeholder="user@example.com"
+                        required
+                    />
+                </mat-form-field>
+
+                <!-- Password -->
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+
+                    <mat-icon matPrefix>lock</mat-icon>
+
+                    <input
+                        matInput
+                        [type]="hidePassword() ? 'password' : 'text'"
+                        name="password"
+                        placeholder="••••••••"
+                        required
+                    />
+
+                    <button
+                        mat-icon-button
+                        matSuffix
+                        type="button"
+                        aria-label="Toggle password visibility"
+                        (click)="togglePasswordVisibility()"
+                    >
+                        <mat-icon>
+                            {{ hidePassword() ? 'visibility' : 'visibility_off' }}
+                        </mat-icon>
+                    </button>
+                </mat-form-field>
+
+                <!-- Remember Me / Forgot Password -->
+                <div class="login-options">
+                    <mat-checkbox> Remember me </mat-checkbox>
+
+                    <a routerLink="/forgot-password"> Forgot Password? </a>
+                </div>
+
+                <!-- Submit -->
+                <button class="login-submit" matButton="filled" type="submit">Sign In</button>
+            </form>
+
+            <!-- Divider -->
+            <div class="login-divider">
+                <span>Or continue with</span>
+            </div>
+
+            <!-- Google -->
+            <button class="google-button" matButton="outlined" type="button">
+                <span class="google-icon">G</span>
+                Continue with Google
+            </button>
+        </section>
+
+        <!-- Registration -->
+        <p class="registration-text">
+            Don't have an account?
+            <a routerLink="/register">Join Now</a>
+        </p>
+    </main>
+</div>
