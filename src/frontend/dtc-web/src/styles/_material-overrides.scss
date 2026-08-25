@@ -1,0 +1,127 @@
+/* =========================================================
+   ANGULAR MATERIAL — DTC OVERRIDES
+   ========================================================= */
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.mat-mdc-button,
+.mat-mdc-unelevated-button,
+.mat-mdc-raised-button,
+.mat-mdc-outlined-button {
+  min-height: 40px;
+
+  border-radius: var(--dtc-radius-sm);
+
+  font-family: var(--dtc-font-body);
+  font-weight: 500;
+}
+
+/* Filled button */
+
+.mat-mdc-unelevated-button {
+  --mat-button-filled-container-color: var(--dtc-accent);
+  --mat-button-filled-label-text-color: var(--dtc-text-inverse);
+}
+
+.mat-mdc-unelevated-button:hover {
+  --mat-button-filled-container-color: var(--dtc-accent-hover);
+}
+
+/* Outlined button */
+
+.mat-mdc-outlined-button {
+  --mat-button-outlined-outline-color: var(--dtc-border);
+  --mat-button-outlined-label-text-color: var(--dtc-text-primary);
+}
+
+/* Text button */
+
+.mat-mdc-button {
+  --mat-button-text-label-text-color: var(--dtc-text-primary);
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.mat-mdc-card {
+  background: var(--dtc-surface);
+
+  border: 1px solid var(--dtc-border);
+  border-radius: var(--dtc-radius-lg);
+
+  box-shadow: none;
+}
+
+/* =========================================================
+   FORM FIELDS
+   ========================================================= */
+
+.mat-mdc-form-field {
+  font-family: var(--dtc-font-body);
+}
+
+/* Outline */
+
+.mat-mdc-form-field {
+  --mdc-outlined-text-field-outline-color: var(--dtc-border-strong);
+  --mdc-outlined-text-field-hover-outline-color: var(--dtc-text-secondary);
+  --mdc-outlined-text-field-focus-outline-color: var(--dtc-accent);
+}
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+.mat-mdc-table {
+  background: var(--dtc-surface);
+  font-family: var(--dtc-font-body);
+}
+
+.mat-mdc-header-cell {
+  font-family: var(--dtc-font-mono);
+  font-size: var(--dtc-text-label-sm-size);
+  font-weight: var(--dtc-text-label-sm-weight);
+  letter-spacing: var(--dtc-text-label-sm-spacing);
+  text-transform: uppercase;
+
+  color: var(--dtc-text-secondary);
+}
+
+.mat-mdc-row:hover {
+  background: var(--dtc-surface-muted);
+}
+
+.mat-mdc-cell {
+  border-bottom-color: var(--dtc-border);
+}
+
+/* =========================================================
+   CHIPS
+   ========================================================= */
+
+.mat-mdc-chip {
+  border-radius: var(--dtc-radius-full);
+  font-family: var(--dtc-font-mono);
+}
+
+/* =========================================================
+   MENUS
+   ========================================================= */
+
+.mat-mdc-menu-panel {
+  border: 1px solid var(--dtc-border);
+  border-radius: var(--dtc-radius-md);
+
+  box-shadow: var(--dtc-shadow-md);
+}
+
+/* =========================================================
+   DIALOG
+   ========================================================= */
+
+.mat-mdc-dialog-container {
+  --mdc-dialog-container-shape: var(--dtc-radius-lg);
+}

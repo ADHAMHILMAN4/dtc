@@ -1,0 +1,21 @@
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--dtc-text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Geist', sans-serif;
+  color: var(--dtc-text-primary);
+}
+
+.dtc-label,
+.dtc-metadata,
+.dtc-technical {
+  font-family: 'JetBrains Mono', monospace;
+}
