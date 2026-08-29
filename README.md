@@ -13,28 +13,34 @@ Companies can manage job postings and applicants, while administrators manage th
 ## Technology Stack
 
 ### Frontend
+
 - Angular
 - TypeScript
 - Angular Material
 
 ### Backend
+
 - ASP.NET Core
 - C#
 - Entity Framework Core
 
 ### Database
+
 - Microsoft SQL Server
 
 ### Authentication
+
 - ASP.NET Core Identity
 - Google OAuth
 
 ### DevOps
+
 - Docker
 - GitHub Actions
 - Azure
 
 ### External Integration
+
 - Adzuna Jobs API
 
 ## Repository Structure
@@ -59,3 +65,6 @@ infrastructure/
 
 .github/
 └── workflows/
+
+test ci
+```
