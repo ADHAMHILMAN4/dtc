@@ -65,6 +65,3 @@ infrastructure/
 
 .github/
 └── workflows/
-
-test ci
-```
