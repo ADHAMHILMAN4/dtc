@@ -1,0 +1,27 @@
+name: Promote Dev to Main
+
+on:
+    push:
+        branches:
+            - dev
+
+permissions:
+    contents: write
+    pull-requests: write
+
+jobs:
+    promote:
+        name: Create PR from dev to main
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Create pull request
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  gh pr create \
+                    --base main \
+                    --head dev \
+                    --title "Promote dev to main" \
+                    --body "Automated promotion of the latest changes from dev to main." \
+                    || echo "PR already exists or could not be created."
