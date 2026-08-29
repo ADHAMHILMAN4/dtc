@@ -1,0 +1,24 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$dtc-theme: mat.define-theme(
+  (
+    color: (
+      theme-type: light,
+    ),
+
+    typography: (
+      brand-family: 'Geist, sans-serif',
+      plain-family: 'Inter, sans-serif',
+    ),
+
+    density: (
+      scale: 0,
+    ),
+  )
+);
+
+:root {
+  @include mat.all-component-themes($dtc-theme);
+}

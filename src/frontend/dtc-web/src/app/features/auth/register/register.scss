@@ -1,0 +1,197 @@
+.register-page {
+    width: 100%;
+    min-height: calc(100vh - var(--dtc-header-height));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--dtc-spacing-md);
+}
+
+.register-container {
+    width: 100%;
+    max-width: 440px;
+}
+
+.register-card {
+    padding: var(--dtc-spacing-xl);
+
+    background: var(--dtc-surface);
+    border: 1px solid var(--dtc-border);
+    border-radius: var(--dtc-radius-lg);
+
+    box-shadow: var(--dtc-shadow-md);
+}
+
+/* ========================================
+   Header
+   ======================================== */
+
+.register-header {
+    text-align: center;
+    margin-bottom: var(--dtc-spacing-xl);
+}
+
+.register-header h1 {
+    margin: 0 0 var(--dtc-spacing-xs);
+
+    font-family: var(--dtc-font-heading);
+    font-size: var(--dtc-text-headline-md-size);
+    line-height: var(--dtc-text-headline-md-line);
+    font-weight: var(--dtc-text-headline-md-weight);
+
+    color: var(--dtc-text-primary);
+}
+
+.register-header p {
+    margin: 0;
+
+    font-family: var(--dtc-font-body);
+    font-size: var(--dtc-text-body-sm-size);
+    line-height: var(--dtc-text-body-sm-line);
+
+    color: var(--dtc-text-secondary);
+}
+
+/* ========================================
+   Form
+   ======================================== */
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--dtc-spacing-md);
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* ========================================
+   Terms
+   ======================================== */
+
+.terms {
+    margin-top: var(--dtc-spacing-xs);
+}
+
+.terms mat-checkbox {
+    font-family: var(--dtc-font-body);
+    font-size: var(--dtc-text-body-sm-size);
+    line-height: var(--dtc-text-body-sm-line);
+}
+
+.terms a {
+    color: var(--dtc-text-primary);
+    font-weight: 600;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================
+   Submit
+   ======================================== */
+
+.submit-button {
+    width: 100%;
+    min-height: 40px;
+}
+
+/* ========================================
+   Divider
+   ======================================== */
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: var(--dtc-spacing-md);
+
+    margin: var(--dtc-spacing-lg) 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+
+    flex: 1;
+
+    height: 1px;
+
+    background: var(--dtc-border);
+}
+
+.divider span {
+    font-family: var(--dtc-font-mono);
+    font-size: var(--dtc-text-label-sm-size);
+    font-weight: var(--dtc-text-label-sm-weight);
+    letter-spacing: var(--dtc-text-label-sm-spacing);
+
+    color: var(--dtc-text-secondary);
+}
+
+/* ========================================
+   Google
+   ======================================== */
+
+.google-button {
+    width: 100%;
+    min-height: 40px;
+
+    font-family: var(--dtc-font-mono);
+    font-size: var(--dtc-text-label-md-size);
+    font-weight: var(--dtc-text-label-md-weight);
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+
+    margin-right: var(--dtc-spacing-sm);
+}
+
+/* ========================================
+   Login Link
+   ======================================== */
+
+.login-link {
+    margin-top: var(--dtc-spacing-lg);
+
+    text-align: center;
+}
+
+.login-link p {
+    margin: 0;
+
+    font-family: var(--dtc-font-body);
+    font-size: var(--dtc-text-body-sm-size);
+    line-height: var(--dtc-text-body-sm-line);
+
+    color: var(--dtc-text-secondary);
+}
+
+.login-link a {
+    color: var(--dtc-text-primary);
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+
+@media (max-width: 480px) {
+    .register-page {
+        padding: var(--dtc-spacing-sm);
+    }
+
+    .register-card {
+        padding: var(--dtc-spacing-lg);
+    }
+}

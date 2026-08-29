@@ -1,0 +1,186 @@
+:root {
+    /* =========================================================
+     BRAND
+     ========================================================= */
+
+    --dtc-primary: #0f172a;
+    --dtc-primary-hover: #1e293b;
+
+    --dtc-accent: #4f46e5;
+    --dtc-accent-hover: #4338ca;
+    --dtc-accent-soft: #eef2ff;
+
+    --dtc-secondary: #64748b;
+    --dtc-secondary-soft: #f1f5f9;
+
+    /* =========================================================
+     BACKGROUND & SURFACES
+     ========================================================= */
+
+    --dtc-background: #f8fafc;
+
+    --dtc-surface: #ffffff;
+    --dtc-surface-muted: #f1f5f9;
+
+    --dtc-surface-dim: #d8dadc;
+    --dtc-surface-container-lowest: #ffffff;
+    --dtc-surface-container-low: #f2f4f6;
+    --dtc-surface-container: #eceef0;
+    --dtc-surface-container-high: #e6e8ea;
+    --dtc-surface-container-highest: #e0e3e5;
+
+    /* =========================================================
+     TEXT
+     ========================================================= */
+
+    --dtc-text-primary: #0f172a;
+    --dtc-text-secondary: #64748b;
+    --dtc-text-muted: #94a3b8;
+    --dtc-text-inverse: #ffffff;
+
+    --dtc-text-on-surface: #191c1e;
+    --dtc-text-on-surface-variant: #45464d;
+
+    /* =========================================================
+     BORDERS
+     ========================================================= */
+
+    --dtc-border: #e2e8f0;
+    --dtc-border-strong: #cbd5e1;
+    --dtc-outline: #76777d;
+    --dtc-outline-variant: #c6c6cd;
+
+    /* =========================================================
+     STATUS
+     ========================================================= */
+
+    --dtc-success: #059669;
+    --dtc-success-soft: #ecfdf5;
+
+    --dtc-warning: #d97706;
+    --dtc-warning-soft: #fffbeb;
+
+    --dtc-error: #dc2626;
+    --dtc-error-soft: #fef2f2;
+
+    --dtc-info: #2563eb;
+    --dtc-info-soft: #eff6ff;
+
+    /* =========================================================
+     TYPOGRAPHY
+     ========================================================= */
+
+    --dtc-font-heading: 'Geist', sans-serif;
+    --dtc-font-body: 'Inter', sans-serif;
+    --dtc-font-mono: 'JetBrains Mono', monospace;
+
+    /* Headings */
+
+    --dtc-text-headline-lg-size: 32px;
+    --dtc-text-headline-lg-weight: 700;
+    --dtc-text-headline-lg-line: 40px;
+    --dtc-text-headline-lg-spacing: -0.02em;
+
+    --dtc-text-headline-md-size: 24px;
+    --dtc-text-headline-md-weight: 600;
+    --dtc-text-headline-md-line: 32px;
+    --dtc-text-headline-md-spacing: -0.01em;
+
+    --dtc-text-headline-sm-size: 20px;
+    --dtc-text-headline-sm-weight: 600;
+    --dtc-text-headline-sm-line: 28px;
+
+    /* Body */
+
+    --dtc-text-body-lg-size: 18px;
+    --dtc-text-body-lg-line: 28px;
+
+    --dtc-text-body-md-size: 16px;
+    --dtc-text-body-md-line: 24px;
+
+    --dtc-text-body-sm-size: 14px;
+    --dtc-text-body-sm-line: 20px;
+
+    /* Labels / metadata */
+
+    --dtc-text-label-md-size: 14px;
+    --dtc-text-label-md-weight: 500;
+    --dtc-text-label-md-line: 20px;
+    --dtc-text-label-md-spacing: 0.02em;
+
+    --dtc-text-label-sm-size: 12px;
+    --dtc-text-label-sm-weight: 500;
+    --dtc-text-label-sm-line: 16px;
+    --dtc-text-label-sm-spacing: 0.05em;
+
+    /* Mobile */
+
+    --dtc-text-headline-lg-mobile-size: 26px;
+    --dtc-text-headline-lg-mobile-line: 32px;
+
+    /* =========================================================
+     SPACING
+     ========================================================= */
+
+    --dtc-space-1: 4px;
+    --dtc-space-2: 8px;
+    --dtc-space-3: 12px;
+    --dtc-space-4: 16px;
+    --dtc-space-5: 20px;
+    --dtc-space-6: 24px;
+    --dtc-space-8: 32px;
+    --dtc-space-10: 40px;
+    --dtc-space-12: 48px;
+    --dtc-space-16: 64px;
+
+    /* Design-system aliases */
+
+    --dtc-spacing-xs: 4px;
+    --dtc-spacing-sm: 8px;
+    --dtc-spacing-md: 16px;
+    --dtc-spacing-lg: 24px;
+    --dtc-spacing-xl: 40px;
+
+    /* =========================================================
+     LAYOUT
+     ========================================================= */
+
+    --dtc-container-max: 1280px;
+    --dtc-container-gutter: 24px;
+
+    --dtc-sidebar-width: 260px;
+    --dtc-sidebar-rail-width: 72px;
+
+    --dtc-header-height: 64px;
+
+    /* =========================================================
+     BORDER RADIUS
+     ========================================================= */
+
+    --dtc-radius-sm: 2px;
+    --dtc-radius-md: 6px;
+    --dtc-radius-lg: 8px;
+    --dtc-radius-xl: 12px;
+    --dtc-radius-full: 9999px;
+
+    /* =========================================================
+     ELEVATION
+     ========================================================= */
+
+    --dtc-shadow-sm: 0 4px 6px -1px rgba(15, 23, 42, 0.05);
+
+    --dtc-shadow-md: 0 10px 15px -3px rgba(15, 23, 42, 0.1);
+
+    /* =========================================================
+     FOCUS
+     ========================================================= */
+
+    --dtc-focus-ring: 0 0 0 2px var(--dtc-surface), 0 0 0 4px var(--dtc-accent);
+
+    /* =========================================================
+     TRANSITIONS
+     ========================================================= */
+
+    --dtc-transition-fast: 120ms ease;
+    --dtc-transition-normal: 180ms ease;
+}

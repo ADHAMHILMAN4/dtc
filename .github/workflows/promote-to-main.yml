@@ -1,0 +1,53 @@
+name: Promote Dev to Main
+
+on:
+    push:
+        branches:
+            - dev
+
+permissions:
+    contents: read
+    pull-requests: write
+
+jobs:
+    promote:
+        name: Create Dev to Main PR
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Check for existing pull request
+              id: check-pr
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  PR_NUMBER=$(gh pr list \
+                    --repo "$GITHUB_REPOSITORY" \
+                    --base main \
+                    --head dev \
+                    --state open \
+                    --json number \
+                    --jq '.[0].number')
+
+                  echo "Existing PR: ${PR_NUMBER:-none}"
+                  echo "pr_number=$PR_NUMBER" >> "$GITHUB_OUTPUT"
+
+            - name: Create pull request
+              if: steps.check-pr.outputs.pr_number == ''
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  gh pr create \
+                    --repo "$GITHUB_REPOSITORY" \
+                    --base main \
+                    --head dev \
+                    --title "Promote dev to main" \
+                    --body "Automated promotion of the latest changes from dev to main."
+
+            - name: Pull request already exists
+              if: steps.check-pr.outputs.pr_number != ''
+              run: |
+                  echo "A PR from dev to main already exists."
+                  echo "PR #${{ steps.check-pr.outputs.pr_number }}"
